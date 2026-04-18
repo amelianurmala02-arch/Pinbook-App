@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- ================= HEADER ================= -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:background="#6ECDD8"
+        android:paddingHorizontal="16dp"
+        android:gravity="center_vertical"
+        android:elevation="10dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_logo"
+            android:contentDescription="Logo aplikasi"
+            app:tint="#FFFFFF"
+            android:layout_marginStart="15dp"
+            android:elevation="8dp" />
+
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/imgLogo"
+            android:text="@string/rak_buku"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+    </RelativeLayout>
+
+    <!-- ================= CONTENT ================= -->
+
+    <!-- ================= BOTTOM NAVIGATION ================= -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="24dp">
+
+        <!-- Menu Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <!-- ========== PENGEMBALIAN ========== -->
+            <LinearLayout
+                android:id="@+id/menuPengembalian"
+                android:layout_width="340dp"
+                android:layout_height="59dp"
+                android:background="@drawable/bg_menu_item"
+                android:elevation="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp">
+
+                <ImageView
+                    android:layout_width="39dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_return"
+                    app:tint="#000000" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:text="@string/pengembalian_buku"
+                    android:textColor="#1D1B20"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_arrow"
+                    app:tint="#000000" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="21dp" />
+
+            <!-- ========== RIWAYAT ========== -->
+            <LinearLayout
+                android:id="@+id/menuRiwayat"
+                android:layout_width="340dp"
+                android:layout_height="59dp"
+                android:background="@drawable/bg_menu_item"
+                android:elevation="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp">
+
+                <ImageView
+                    android:layout_width="39dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_history"
+                    app:tint="#000000" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:text="@string/riwayat_peminjaman"
+                    android:textColor="#1D1B20"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_arrow"
+                    app:tint="#000000" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="21dp" />
+
+            <!-- ========== FAVORITE ❤️ ========== -->
+            <LinearLayout
+                android:id="@+id/menuFavorite"
+                android:layout_width="340dp"
+                android:layout_height="59dp"
+                android:background="@drawable/bg_menu_item"
+                android:elevation="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp">
+
+                <ImageView
+                    android:layout_width="39dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_love_outline"
+                    app:tint="#000000" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:text="Favorite"
+                    android:textColor="#1D1B20"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_arrow"
+                    app:tint="#000000" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- BOTTOM NAVIGATION (RESMI) -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6ECDD8"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:labelVisibilityMode="labeled"/>
+</LinearLayout>
+
+

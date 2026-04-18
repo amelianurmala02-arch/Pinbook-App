@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/book_detail_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookDetailActivity"
+    android:background="@drawable/bg_gradient_splash">
+
+    <!-- BACK BUTTON & HEADER TITLE -->
+    <TextView
+        android:id="@+id/tvHeaderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/book_detail"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/inter_regular"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"/>
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="20dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_arrow_back"
+        android:contentDescription="@string/back"
+        app:tint="#000000"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_below="@id/tvHeaderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomBar"
+        android:paddingBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- Card untuk Cover + Judul + Subtitle + Favorite -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCover"
+                android:layout_width="194dp"
+                android:layout_height="293dp"
+                android:layout_marginTop="15dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- BAGIAN GAMBAR -->
+
+                    <!-- JUDUL BUKU DI DALAM CARD -->
+
+                    <!-- SUBTITLE DI DALAM CARD -->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="252dp">
+
+                        <!-- Stock Badge -->
+
+                        <ImageView
+                            android:id="@+id/imgCover"
+                            android:layout_width="195dp"
+                            android:layout_height="206dp"
+                            android:contentDescription="@string/cover_buku"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/book1" />
+
+                        <TextView
+                            android:id="@+id/txtStock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/bg_stok_badge"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="4dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="4dp"
+                            android:text="@string/stok_default"
+                            android:textColor="#FFFFFF"
+                            android:textSize="8sp" />
+
+                        <!-- Favorite icon -->
+                        <ImageView
+                            android:id="@+id/ivFavorite"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_margin="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="9dp"
+                            android:layout_marginBottom="3dp"
+                            android:contentDescription="@string/favorite"
+                            android:src="@drawable/ic_love_outline" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvBookTitle"
+                        android:layout_width="160dp"
+                        android:layout_height="88dp"
+                        android:layout_marginTop="-40dp"
+                        android:fontFamily="@font/inter_regular"
+                        android:paddingStart="8dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="5dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold"  />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Description Title -->
+            <TextView
+                android:id="@+id/tvDescTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/deskripsi"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="#000000"/>
+
+            <!-- Description Text -->
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="28dp"
+                android:fontFamily="@font/inter_regular"
+                android:lineSpacingExtra="4dp"
+                android:textColor="#1D1B20"
+                android:textSize="10sp"
+                android:justificationMode="inter_word"
+                android:text="" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom bar fixed -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/bg_bottom_bar"
+        android:elevation="8dp">
+
+        <ImageView
+            android:src="@drawable/font_pinbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"/>
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPinjam"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_rounded_blue"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/pinjam"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

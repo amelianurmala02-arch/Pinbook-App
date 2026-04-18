@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_gradient_splash">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Kode OTP"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/inputOtp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="6 digit kode"
+        android:inputType="number"
+        android:maxLength="6"
+        android:background="@drawable/edittext_bg"
+        android:paddingStart="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#9A9A9A" />
+
+    <Button
+        android:id="@+id/btnVerify"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Verifikasi"
+        android:backgroundTint="#4183FF"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- HEADER -->
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center_vertical">
+
+        <!-- PANAH KEMBALI -->
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="@string/back"
+            app:tint="#000000"/>
+
+    </RelativeLayout>
+
+
+    <!-- KONTEN -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerLayout"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="75dp">
+
+        <!-- ICON SUCCESS -->
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_check_circle"
+            app:tint="#3F7BFF"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- TEXT -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/peminjaman_berhasil"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#3F7BFF"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- QR CODE -->
+        <ImageView
+            android:id="@+id/imgQRCode"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- DOWNLOAD QR -->
+        <Button
+            android:id="@+id/btnDownloadQR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/download_qr"
+            android:backgroundTint="#3F7BFF"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="10dp">
+
+    <!-- Label -->
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="Label"
+        android:textSize="11sp"
+        android:textColor="#1D1B20"
+        tools:ignore="HardcodedText" />
+
+    <!-- Input -->
+    <EditText
+        android:id="@+id/edtInput"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_input"
+        android:textSize="11sp"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:inputType="text"
+        android:importantForAccessibility="yes"
+        android:hint="Masukkan teks"
+        android:autofillHints="username" />
+
+</LinearLayout>

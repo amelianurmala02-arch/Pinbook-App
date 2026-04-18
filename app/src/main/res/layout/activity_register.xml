@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradient_splash">
+
+        <!-- Logo -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:src="@drawable/ic_logo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="8dp"/>
+
+            <ImageView
+                android:id="@+id/appName"
+                android:layout_width="164dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/font_pinbook"
+                android:contentDescription="Pinbook Logo" />
+        </LinearLayout>
+
+        <!-- Input Nama -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nama"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_marginTop="40dp"/>
+
+        <EditText
+            android:id="@+id/inputNama"
+            android:hint="@string/masukkan_nama"
+            android:background="@drawable/bg_input_field"
+            android:padding="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textColorHint="#BDBDBD"/>
+
+        <!-- Input Email -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/inputEmail"
+            android:hint="@string/masukkan_email"
+            android:background="@drawable/bg_input_field"
+            android:padding="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textColorHint="#BDBDBD"/>
+
+        <!-- Input Password -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <EditText
+                android:id="@+id/inputPassword"
+                android:hint="@string/masukkan_password"
+                android:inputType="textPassword"
+                android:padding="14dp"
+                android:background="@drawable/bg_input_field"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="#BDBDBD"/>
+
+            <ImageView
+                android:id="@+id/eyePassword"
+                android:src="@drawable/ic_eye"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+        </RelativeLayout>
+
+        <!-- Konfirmasi Password -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/konfirmasi_password"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <EditText
+                android:id="@+id/inputKonfirmasiPassword"
+                android:hint="@string/masukkan_kembali_password"
+                android:inputType="textPassword"
+                android:padding="14dp"
+                android:background="@drawable/bg_input_field"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="#BDBDBD"/>
+
+            <ImageView
+                android:id="@+id/eyeKonfirmasi"
+                android:src="@drawable/ic_eye"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+        </RelativeLayout>
+
+        <!-- Tombol Daftar -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDaftar"
+            android:text="@string/daftar"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1565C0"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/btn_rounded_blue"/>
+
+        <!-- Link ke Login -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sudah_punya_akun"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtMasuk"
+                android:text="@string/masuk_link"
+                android:textColor="#240EED"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

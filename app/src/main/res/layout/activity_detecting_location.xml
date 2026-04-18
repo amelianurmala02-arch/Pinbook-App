@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Peta Google Maps di belakang -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Overlay UI di atas peta -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Icon lokasi -->
+        <ImageView
+            android:id="@+id/locationIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            android:alpha="0.9"
+            android:contentDescription="Icon lokasi"
+            android:src="@drawable/ic_location" />
+
+        <!-- Teks status -->
+        <TextView
+            android:id="@+id/detectingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detecting your location..."
+            android:textColor="#006CFA"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textAlignment="center" />
+
+        <!-- Tombol retry -->
+        <Button
+            android:id="@+id/btnRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coba Lagi"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="top|center_horizontal"
+    android:background="@drawable/bg_gradient_splash">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verifikasi Email"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- 🔹 Tambahkan TextView info -->
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kode verifikasi telah dikirim ke email"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/inputKode"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Kode verifikasi"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_bg"
+        android:paddingStart="16dp"/>
+
+    <Button
+        android:id="@+id/btnVerifikasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verifikasi"
+        android:layout_marginTop="16dp" />
+
+    <!-- 🔹 Tambahkan tombol Kirim Ulang -->
+    <Button
+        android:id="@+id/btnKirimUlang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kirim Ulang Email"
+        android:layout_marginTop="16dp"
+        android:enabled="false"/>
+</LinearLayout>

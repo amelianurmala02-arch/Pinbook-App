@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="input_height">32dp</dimen>
+    <dimen name="input_width">260dp</dimen>
+
+    <dimen name="input_radius">8dp</dimen>
+    <dimen name="btn_radius">25dp</dimen>
+
+    <dimen name="padding_screen">24dp</dimen>
+    <dimen name="spacing_input">12dp</dimen>
+</resources>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Leaflet Map - Language Switcher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <style>
+        #map { height: 100vh; width: 100%; }
+
+        /* Tombol Lokasi Saya & Welcome */
+        .leaflet-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        #welcomeBtn { top: 50px; }
+
+        /* Popup info */
+        #infoBox {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+<div id="myLocationBtn" class="leaflet-button">📍 Lokasi Saya</div>
+<div id="welcomeBtn" class="leaflet-button">➡️ Lanjut Welcome</div>
+<div id="infoBox">🌍 Klik peta untuk mengubah bahasa</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+    // Ambil parameter LAT & LON dari URL
+    function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    const lat = parseFloat(getQueryParam("lat")) || -6.2;
+    const lon = parseFloat(getQueryParam("lon")) || 106.816666;
+
+    const map = L.map('map').setView([lat, lon], 3); // Zoom out untuk lihat dunia
+
+    // Tile Layer OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    // Marker user
+    let userMarker = L.marker([lat, lon])
+        .addTo(map)
+        .bindPopup("📍 Lokasi Saya")
+        .openPopup();
+
+    // Show info box saat load
+    const infoBox = document.getElementById("infoBox");
+    infoBox.style.display = "block";
+    setTimeout(() => {
+        infoBox.style.display = "none";
+    }, 3000);
+
+    // ✅ KLIK PETA UNTUK GANTI BAHASA
+map.on('click', function(e) {
+    const clickedLat = e.latlng.lat;
+    const clickedLng = e.latlng.lng;
+
+    // Pindahkan marker ke lokasi yang diklik
+    if (userMarker) {
+        map.removeLayer(userMarker);
+    }
+    userMarker = L.marker([clickedLat, clickedLng])
+        .addTo(map)
+        .bindPopup("📍 Lokasi Dipilih")
+        .openPopup();
+
+    infoBox.textContent = "🔍 Mencari lokasi...";
+    infoBox.style.display = "block";
+
+    fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${clickedLat}&lon=${clickedLng}`)
+        .then(response => response.json())
+        .then(data => {
+            const countryCode = data.address.country_code ? data.address.country_code.toUpperCase() : "US";
+            const countryName = data.address.country || "Unknown";
+
+            infoBox.textContent = `🌍 ${countryName} (${countryCode})`;
+
+            if (window.Android && window.Android.changeLanguage) {
+                window.Android.changeLanguage(countryCode);
+            }
+
+            setTimeout(() => {
+                infoBox.style.display = "none";
+            }, 2000);
+        })
+        .catch(error => {
+            infoBox.textContent = "❌ Gagal mendapatkan lokasi";
+            setTimeout(() => {
+                infoBox.style.display = "none";
+            }, 2000);
+        });
+});
+
+    // Fungsi update lokasi real-time
+    function updateMyLocation() {
+        if (!navigator.geolocation) {
+            alert("Browser tidak mendukung geolocation");
+            return;
+        }
+        navigator.geolocation.getCurrentPosition(
+            function(position) {
+                const myLatLng = [position.coords.latitude, position.coords.longitude];
+                map.setView(myLatLng, 15);
+
+                if (userMarker) {
+                    map.removeLayer(userMarker);
+                }
+                userMarker = L.marker(myLatLng)
+                    .addTo(map)
+                    .bindPopup("📍 Lokasi Saya (Real-time)")
+                    .openPopup();
+            },
+            function(error) {
+                alert("Gagal mendapatkan lokasi: " + error.message);
+            }
+        );
+    }
+
+    document.getElementById("myLocationBtn").addEventListener("click", updateMyLocation);
+
+    // Tombol lanjut ke Welcome
+    document.getElementById("welcomeBtn").addEventListener("click", function() {
+        if (window.Android && window.Android.goToWelcome) {
+            window.Android.goToWelcome();
+        }
+    });
+</script>
+</body>
+</html>

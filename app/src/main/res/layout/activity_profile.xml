@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- ================= HEADER ================= -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:background="#6ECDD8"
+        android:paddingHorizontal="16dp"
+        android:gravity="center_vertical"
+        android:elevation="10dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_logo"
+            android:contentDescription="Logo aplikasi"
+            app:tint="#FFFFFF"
+            android:layout_marginStart="15dp"
+            android:elevation="8dp" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/imgLogo"
+            android:text="@string/profil"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+    </RelativeLayout>
+
+    <!-- ================= CONTENT ================= -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp">
+
+            <!-- FOTO PROFIL -->
+            <ImageView
+                android:layout_width="114dp"
+                android:layout_height="114dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/foto_profile"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_circle"
+                android:clipToOutline="true"/>
+
+
+            <!-- NAMA -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:text="Amelia Nurmala Dewi"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp" />
+
+            <!-- ================= SECTION TITLE ================= -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tentang_saya"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#1D1B20"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- ================= LIST ITEM ================= -->
+            <!-- EMAIL -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="amelianurmala02@gmail.com"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:paddingBottom="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0" />
+
+            <!-- NOMOR TELEPON -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nomor_telepon"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:paddingTop="12dp" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0895348123255"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:paddingBottom="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0" />
+
+            <!-- KATA SANDI -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kata_sandi"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:paddingTop="12dp" />
+
+            <TextView
+                android:id="@+id/tvPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*********"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:paddingBottom="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0" />
+
+            <!-- ALAMAT -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alamat"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:paddingTop="12dp" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bogor, Jawa Barat"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:paddingBottom="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0" />
+
+            <!-- ================= BUTTON LOGOUT ================= -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogout"
+                android:layout_width="130dp"
+                android:layout_height="48dp"
+                android:text="@string/keluar"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_button"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="24dp"
+                android:elevation="4dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ================= BOTTOM NAV ================= -->
+    <!-- BOTTOM NAVIGATION (RESMI) -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6ECDD8"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:labelVisibilityMode="labeled"/>
+</LinearLayout>
+

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/ic_logo" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/font_pinbook" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/btnProfile"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_profile" />
+    </LinearLayout>
+
+    <!-- SEARCH BAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_stok_badge"
+        android:paddingHorizontal="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:elevation="2dp">
+
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="@string/cari_buku"
+            android:background="@android:color/transparent"
+            android:textColor="#000"
+            android:textColorHint="#9E9E9E"
+            android:inputType="text"
+            android:minHeight="48dp"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_search"
+            android:contentDescription="@string/search"/>
+    </LinearLayout>
+
+    <!-- FILTER KATEGORI -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipAll"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/all"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/selector_chip_text"
+            android:checkable="true"
+            android:checked="true"
+            app:chipBackgroundColor="@color/selector_chip_bg"
+            app:chipStrokeColor="#999999"
+            app:chipStrokeWidth="1dp"
+            app:chipCornerRadius="20dp"
+            app:chipMinHeight="48dp"
+            app:chipIconSize="0dp"
+            app:chipStartPadding="0dp"
+            app:chipEndPadding="0dp"
+            app:textStartPadding="0dp"
+            app:textEndPadding="0dp"
+            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="0dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipPendidikan"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/pendidikan"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/selector_chip_text"
+            android:checkable="true"
+            app:chipBackgroundColor="@color/selector_chip_bg"
+            app:chipStrokeColor="#999999"
+            app:chipStrokeWidth="1dp"
+            app:chipCornerRadius="20dp"
+            app:chipMinHeight="48dp"
+            app:chipIconSize="0dp"
+            app:chipStartPadding="0dp"
+            app:chipEndPadding="0dp"
+            app:textStartPadding="0dp"
+            app:textEndPadding="0dp"
+            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="0dp"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipNovel"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/novel"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/selector_chip_text"
+            android:checkable="true"
+            app:chipBackgroundColor="@color/selector_chip_bg"
+            app:chipStrokeColor="#999999"
+            app:chipStrokeWidth="1dp"
+            app:chipCornerRadius="20dp"
+            app:chipMinHeight="48dp"
+            app:chipIconSize="0dp"
+            app:chipStartPadding="0dp"
+            app:chipEndPadding="0dp"
+            app:textStartPadding="0dp"
+            app:textEndPadding="0dp"
+            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+    </LinearLayout>
+
+    <!-- GRID BUKU -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerBuku"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp" />
+
+    <FrameLayout
+        android:id="@+id/fragmentOngoing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- BOTTOM NAVIGATION (RESMI) -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6ECDD8"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:labelVisibilityMode="labeled"/>
+</LinearLayout>

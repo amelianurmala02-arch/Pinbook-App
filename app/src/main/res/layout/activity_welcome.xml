@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_gradient_splash"
+    android:padding="24dp">
+
+    <!-- Bendera (placeholder dulu) -->
+    <ImageView
+        android:id="@+id/flagImage"
+        android:layout_width="151dp"
+        android:layout_height="113dp"
+        android:src="@drawable/flag_world"
+        android:layout_marginTop="230dp" />
+
+    <!-- Teks Sambutan (nanti Kotlin yang ganti) -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/inter_bold"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#006CFA"
+        android:textSize="20sp" />
+
+</LinearLayout>

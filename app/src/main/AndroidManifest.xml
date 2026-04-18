@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Izin lokasi -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pinbook">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY_HERE"/>
+
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- Activity lain -->
+        <activity android:name=".LocationPermissionActivity" />
+        <activity android:name=".Splash2Activity" />
+        <activity android:name=".SuccessActivity"/>
+        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".HomeActivity"/>
+        <activity android:name=".BorrowingHistoryActivity"/>
+        <activity android:name=".DetectingLocationActivity" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".FavoriteActivity" />
+        <activity android:name=".MapActivity"/>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".BookDetailActivity" />
+        <activity android:name=".BookRackActivity" />
+        <activity android:name=".BorrowBookActivity" />
+        <activity android:name=".ReturnBookActivity" />
+        <activity android:name=".ScanQrActivity" />
+        <activity android:name=".AiChatActivity" />
+
+        <receiver
+            android:name=".BootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+
+        <!-- Splash1 hanya sekali, sekaligus jadi launcher -->
+        <activity
+            android:name=".Splash1Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

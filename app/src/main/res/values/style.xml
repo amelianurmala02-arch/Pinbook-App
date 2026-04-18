@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- LABEL KIRI -->
+    <style name="LabelText">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!-- INPUT KANAN -->
+    <style name="InputField">
+        <item name="android:layout_width">@dimen/input_width</item>
+        <item name="android:layout_height">@dimen/input_height</item>
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- BUTTON SIMPAN -->
+    <style name="PrimaryButton">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/btn_rounded</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="formItem">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <style name="formLabel">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="formInput">
+        <item name="android:layout_width">@dimen/input_width</item>
+        <item name="android:layout_height">@dimen/input_height</item>
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ThemeOverlay" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>
