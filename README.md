@@ -86,34 +86,30 @@ Alur penggunaan aplikasi Pinbook:
 |:---:|:---:|
 |![A4 - 4 (1)](https://github.com/user-attachments/assets/f9c6ff9e-abb8-44b1-87d8-e717f1b2a1c2)| ![A4 - 5 (1)](https://github.com/user-attachments/assets/7ee6c888-5cd7-4ea3-bc04-0504a6651dbd) |
 
-### 3. Login & Register
-| Login | Register |
+### 3. Register & Home
+| Register | Home |
 |:---:|:---:|
-| ![A4 - 6 (1)](https://github.com/user-attachments/assets/7391601b-603d-4419-a68a-7bf140baceba) | ![A4 - 7 (1)](https://github.com/user-attachments/assets/859939c4-6031-4fb2-9755-6b498d5148a1) |
+| ![A4 - 6 (1)](https://github.com/user-attachments/assets/7391601b-603d-4419-a68a-7bf140baceba) | <img width="595" height="842" alt="A4 - 7" src="https://github.com/user-attachments/assets/9ca62ac6-ae75-4b09-bc95-d1cf8884d92a" /> |
 
-### 4. Home & Detail Buku
-| Home (All) | Home (Pendidikan) | Home (Novel) | Detail Buku |
-|:---:|:---:|:---:|:---:|
-| *(screenshot)* | *(screenshot)* | *(screenshot)* | *(screenshot)* |
-
-### 5. Peminjaman & Pengembalian
-| Pinjam Buku | Sukses Pinjam | Pengembalian | Scan Barcode |
-|:---:|:---:|:---:|:---:|
-| *(screenshot)* | *(screenshot)* | *(screenshot)* | *(screenshot)* |
-
-### 6. Riwayat & Rak Buku
-| Sedang Dipinjam | Riwayat | Rak Buku |
+### 4. Detail Buku  & Peminjaman
+| Detail Buku | Pinjam Buku | Sukses Pinjam |
 |:---:|:---:|:---:|
-| *(screenshot)* | *(screenshot)* | *(screenshot)* |
+| ![A4 - 8 (1)](https://github.com/user-attachments/assets/e1242195-fbb3-4f23-95a4-b361c8ea3e33) | ![A4 - 9 (1)](https://github.com/user-attachments/assets/e3aa7f77-0bc5-45f4-8567-7800bd74c6be) | <img width="595" height="842" alt="A4 - 11" src="https://github.com/user-attachments/assets/4ab5d4c1-f614-4c5b-9b26-0259360ba8de" /> | 
 
-### 7. AI Chatbot Bookie & Profil
-| Bookie AI | Profil |
-|:---:|:---:|
-| *(screenshot)* | *(screenshot)* |
+### 5. Pengembalian & Riwayat
+| Pengembalian | Scan Barcode | Sedang Dipinjam | Riwayat | 
+|:---:|:---:|:---:|:---:|
+| <img width="595" height="842" alt="A4 - 13" src="https://github.com/user-attachments/assets/cb5b54f6-10ba-4310-bf85-12c45c3ef357" /> | *(screenshot)* | ![A4 - 15 (1)](https://github.com/user-attachments/assets/825e6588-78f0-45c9-95f6-061e0994648f) | ![A4 - 16 (1)](https://github.com/user-attachments/assets/66806fa5-5ef5-4521-b9ba-c50cbed223bd) |
+
+### 6. Rak Buku, AI & Profil
+| Rak Buku | Bookie AI |  Profil |
+|:---:|:---:|:---:|
+| *(screenshot)* | *(screenshot)* | ![A4 - 17 (1)](https://github.com/user-attachments/assets/f7b952c9-e7f6-4020-b42a-1a612cae9f02)|
+
 
 ---
 
-## ✨ Fitur yang ditambahkan
+## Fitur yang ditambahkan
 
 ### 1. Kategori Buku
 - Filter buku berdasarkan kategori: **All**, **Pendidikan**, **Novel**
@@ -200,27 +196,7 @@ Pinbook/
 
 ---
 
-## ⚙️ Cara Menjalankan Project
-
-1. Clone repository ini:
-```bash
-git clone https://github.com/amelianurmala02-arch/Pinbook.git
-```
-
-2. Buka dengan **Android Studio**
-
-3. Tambahkan file `google-services.json` dari Firebase Console ke folder `app/`
-
-4. Ganti API key Gemini di `AiChatActivity.kt`:
-```kotlin
-val apiKey = "YOUR_GEMINI_API_KEY"
-```
-
-5. Run project ke emulator atau device Android (min SDK 23)
-
----
-
-## 🔗 Tautan Penting
+## Tautan Penting
 
 | Platform | Link |
 |----------|------|
