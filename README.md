@@ -16,7 +16,7 @@
 
 <img width="595" height="421" alt="A4 - 21" src="https://github.com/user-attachments/assets/5e018e53-8b1c-41c6-91e5-894868c4118b" />
 
--
+---
 
 Pinbook adalah aplikasi perpustakaan digital berbasis Android yang memudahkan pengguna dalam meminjam, mengembalikan, dan mengelola buku secara online. Dilengkapi dengan fitur AI Chatbot, Scan Barcode, Notifikasi Pengingat, dan Multi-Language sesuai lokasi pengguna.
 
@@ -79,7 +79,7 @@ Alur penggunaan aplikasi Pinbook:
 ### 1. Splash Screen & Location Permission
 | Splash Screen | Location Permission | Detecting Location |
 |:---:|:---:|:---:|
-| *(screenshot)* | *(screenshot)* | *(screenshot)* |
+|![A4 - 1 (1)](https://github.com/user-attachments/assets/5502f8a8-7c71-494d-9fb8-104ed2b6a55a) | ![A4 - 2 (1)](https://github.com/user-attachments/assets/53c91296-3686-4ab3-999f-3e232881d6cd) | ![A4 - 3 (1)](https://github.com/user-attachments/assets/8e28118e-74d2-4003-abf0-ced9d774e2d0)|
 
 ### 2. Map & Welcome Screen
 | Map Screen | Welcome Indonesia | Welcome Malaysia |
