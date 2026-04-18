@@ -83,8 +83,12 @@ Alur penggunaan aplikasi Pinbook:
 
 ### 2. Map & Welcome Screen
 | Map Screen | Welcome Indonesia | 
-|:---:|:---:|:---:|
+|:---:|:---:|
 |![A4 - 4 (1)](https://github.com/user-attachments/assets/f9c6ff9e-abb8-44b1-87d8-e717f1b2a1c2)| ![A4 - 5 (1)](https://github.com/user-attachments/assets/7ee6c888-5cd7-4ea3-bc04-0504a6651dbd) |
+
+| Login | Register |
+|:---:|:---:|
+| ![A4 - 6 (1)](https://github.com/user-attachments/assets/7391601b-603d-4419-a68a-7bf140baceba) | ![A4 - 7 (1)](https://github.com/user-attachments/assets/859939c4-6031-4fb2-9755-6b498d5148a1) |
 
 ### 3. Login & Register
 | Login | Register |
