@@ -79,7 +79,7 @@ Alur penggunaan aplikasi Pinbook:
 ### 1. Splash Screen & Location Permission
 | Splash Screen | Location Permission | Detecting Location |
 |:---:|:---:|:---:|
-|<img width="412" height="917" alt="Splash Screen 2" src="https://github.com/user-attachments/assets/3d887bdf-5396-4e50-9a30-9bb8750c8465" />| <img width="412" height="917" alt="Android Compact - 1" src="https://github.com/user-attachments/assets/6f649983-65b6-4bf2-8d50-9a5715fa4a6a" /> | ![A4 - 3 (1)](https://github.com/user-attachments/assets/8e28118e-74d2-4003-abf0-ced9d774e2d0)|
+|<img width="412" height="917" alt="Splash Screen 2" src="https://github.com/user-attachments/assets/3d887bdf-5396-4e50-9a30-9bb8750c8465" />| <img width="412" height="917" alt="Android Compact - 1" src="https://github.com/user-attachments/assets/6f649983-65b6-4bf2-8d50-9a5715fa4a6a" /> | <img width="413" height="917" alt="Detecting Location Screen" src="https://github.com/user-attachments/assets/8d640718-ab69-4baa-b7f3-cf3dc4e1bb87" /> |
 
 ### 2. Welcome Screen & Login
 | Welcome Indonesia | Login | 
