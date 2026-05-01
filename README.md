@@ -202,6 +202,6 @@ Pinbook/
 |----------|------|
 | **Repository GitHub** | [github.com/amelianurmala02-arch/Pinbook](https://github.com/amelianurmala02-arch/Pinbook) |
 | **Video Demo** | https://youtu.be/7bhAccqndLA?si=6OTrp3IFaHA6w1ds |
-| **ClickUp SCRUM** | (https://sharing.clickup.com/90181767922/g/h/2kzm14qj-678/2b3374f74beb58e) |
+| **ClickUp SCRUM** | https://sharing.clickup.com/90181767922/g/h/2kzm14qj-678/2b3374f74beb58e |
 
 ---
