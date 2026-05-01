@@ -84,27 +84,27 @@ Alur penggunaan aplikasi Pinbook:
 ### 2. Welcome Screen & Login
 | Welcome Indonesia | Login | 
 |:---:|:---:|
-|![A4 - 4 (1)](https://github.com/user-attachments/assets/f9c6ff9e-abb8-44b1-87d8-e717f1b2a1c2)| ![A4 - 5 (1)](https://github.com/user-attachments/assets/7ee6c888-5cd7-4ea3-bc04-0504a6651dbd) |
+|<img width="412" height="917" alt="Welcome Screen" src="https://github.com/user-attachments/assets/710d1b8c-f7f2-4525-9e54-179a4352ab33" /> | <img width="412" height="917" alt="Login Screen" src="https://github.com/user-attachments/assets/1d9c41ff-a5da-4f2d-b82d-76e1aa5d6c2f" /> |
 
 ### 3. Register & Home
 | Register | Home |
 |:---:|:---:|
-| ![A4 - 6 (1)](https://github.com/user-attachments/assets/7391601b-603d-4419-a68a-7bf140baceba) | <img width="595" height="842" alt="A4 - 7" src="https://github.com/user-attachments/assets/9ca62ac6-ae75-4b09-bc95-d1cf8884d92a" /> |
+| <img width="412" height="917" alt="Register Screen" src="https://github.com/user-attachments/assets/091b3630-ca40-4f5d-893d-bbda013e4580" /> | <img width="412" height="917" alt="Group 113 (1)" src="https://github.com/user-attachments/assets/24fe8d9b-cbbd-4ceb-9a00-022c0539295e" /> |
 
 ### 4. Detail Buku  & Peminjaman
 | Detail Buku | Pinjam Buku | Sukses Pinjam |
 |:---:|:---:|:---:|
-| ![A4 - 8 (1)](https://github.com/user-attachments/assets/e1242195-fbb3-4f23-95a4-b361c8ea3e33) | ![A4 - 9 (1)](https://github.com/user-attachments/assets/e3aa7f77-0bc5-45f4-8567-7800bd74c6be) | <img width="595" height="842" alt="A4 - 11" src="https://github.com/user-attachments/assets/4ab5d4c1-f614-4c5b-9b26-0259360ba8de" /> | 
+| <img width="412" height="917" alt="Book Detail 2" src="https://github.com/user-attachments/assets/002d903e-bf9d-4dd2-939e-33ebfb59fa85" /> | <img width="412" height="917" alt="Calendar Picker 2" src="https://github.com/user-attachments/assets/f77b6f3b-d842-44e8-a291-033ca87f23db" /> | <img width="412" height="917" alt="Return Confirmation Screen" src="https://github.com/user-attachments/assets/b60e131f-f7d4-47f3-aed8-af5f9d771c85" /> | 
 
 ### 5. Pengembalian & Riwayat
 | Pengembalian | Scan Barcode | Sedang Dipinjam | Riwayat | 
 |:---:|:---:|:---:|:---:|
-| <img width="595" height="842" alt="A4 - 13" src="https://github.com/user-attachments/assets/cb5b54f6-10ba-4310-bf85-12c45c3ef357" /> | *(screenshot)* | ![A4 - 15 (1)](https://github.com/user-attachments/assets/825e6588-78f0-45c9-95f6-061e0994648f) | ![A4 - 16 (1)](https://github.com/user-attachments/assets/66806fa5-5ef5-4521-b9ba-c50cbed223bd) |
+|<img width="412" height="917" alt="Return Book Screen" src="https://github.com/user-attachments/assets/611e9dec-924f-483e-9d65-4796b51d5ee0" /> | <img width="412" height="917" alt="Return Confirmation Screen (1)" src="https://github.com/user-attachments/assets/4b846ac3-0e36-43b4-a371-f1f084e59b0b" /> | <img width="412" height="917" alt="Borrowing History Screen 1" src="https://github.com/user-attachments/assets/98219b0a-4391-40d6-b792-5c6029cf9b8c" /> | <img width="412" height="917" alt="Borrowing History Screen 2" src="https://github.com/user-attachments/assets/6178433e-d34a-4593-9e63-5ae503cf42a3" /> |
 
 ### 6. Rak Buku, AI & Profil
 | Rak Buku | Bookie AI |  Profil |
 |:---:|:---:|:---:|
-| *(screenshot)* | *(screenshot)* | ![A4 - 17 (1)](https://github.com/user-attachments/assets/f7b952c9-e7f6-4020-b42a-1a612cae9f02)|
+| <img width="412" height="917" alt="Book Rack Screen" src="https://github.com/user-attachments/assets/8bb5a764-11c6-4e95-9a45-8ebcc995a5ef" /> | <img width="412" height="927" alt="Group 114" src="https://github.com/user-attachments/assets/55ae0445-e1d9-40aa-93cb-6e5fff13c220" /> | <img width="412" height="917" alt="Profile Screen" src="https://github.com/user-attachments/assets/0ae78fd9-78df-4f19-a525-4e0590a7b35c" /> |
 
 
 ---
