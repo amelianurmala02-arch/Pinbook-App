@@ -68,7 +68,7 @@ Alur penggunaan aplikasi Pinbook:
 
 ## Mockup UI
 
-![Mockup Pinbook](mockup.jpg)
+<img width="1920" height="1080" alt="Group 127" src="https://github.com/user-attachments/assets/ce247760-2d47-4025-8b1b-b3d71b2c199d" />
 
 > Mockup di atas menampilkan seluruh halaman aplikasi Pinbook sebelum diimplementasikan.
 
