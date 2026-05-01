@@ -24,7 +24,7 @@ Pinbook adalah aplikasi perpustakaan digital berbasis Android yang memudahkan pe
 
 ## 🎥 Video UX / Demo Aplikasi
 
-[![Video Demo Pinbook](https://img.shields.io/badge/▶%20Tonton%20Demo-YouTube-red?style=for-the-badge&logo=youtube)](LINK_VIDEO_KAMU_DI_SINI)
+[![Video Demo Pinbook](https://img.shields.io/badge/▶%20Tonton%20Demo-YouTube-red?style=for-the-badge&logo=youtube)](https://youtu.be/7bhAccqndLA?si=6OTrp3IFaHA6w1ds)
 
 ---
 
@@ -201,10 +201,7 @@ Pinbook/
 | Platform | Link |
 |----------|------|
 | **Repository GitHub** | [github.com/amelianurmala02-arch/Pinbook](https://github.com/amelianurmala02-arch/Pinbook) |
-| **Video Demo** | *(isi link video kamu)* |
-| **ClickUp SCRUM** | *(isi link ClickUp kamu)* |
-| **MEGAH-EDLINK** | [megah.pelitabangsa.ac.id](https://megah.pelitabangsa.ac.id/) |
+| **Video Demo** | https://youtu.be/7bhAccqndLA?si=6OTrp3IFaHA6w1ds |
+| **ClickUp SCRUM** | [*(isi link ClickUp kamu)*](https://sharing.clickup.com/90181767922/g/h/2kzm14qj-678/2b3374f74beb58e) |
 
 ---
-
-Project ini dibuat untuk keperluan UTS Mata Kuliah Pemrograman Mobile 2 — Universitas Pelita Bangsa Semester Genap 2025/2026.
