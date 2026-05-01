@@ -101,7 +101,7 @@ Alur penggunaan aplikasi Pinbook:
 | <img width="412" height="917" alt="Book Detail 2" src="https://github.com/user-attachments/assets/002d903e-bf9d-4dd2-939e-33ebfb59fa85" /> | <img width="412" height="917" alt="Calendar Picker 2" src="https://github.com/user-attachments/assets/f77b6f3b-d842-44e8-a291-033ca87f23db" /> | <img width="412" height="917" alt="Return Confirmation Screen" src="https://github.com/user-attachments/assets/b60e131f-f7d4-47f3-aed8-af5f9d771c85" /> | 
 
 ### 5. Pengembalian & Riwayat
-| Pengembalian | Scan Barcode | Sedang Dipinjam | Riwayat | 
+| Pengembalian | Scan Barcode | Sedang Dipinjam |
 |:---:|:---:|:---:|
 |<img width="412" height="917" alt="Return Book Screen" src="https://github.com/user-attachments/assets/611e9dec-924f-483e-9d65-4796b51d5ee0" /> | <img width="412" height="917" alt="Return Confirmation Screen (1)" src="https://github.com/user-attachments/assets/4b846ac3-0e36-43b4-a371-f1f084e59b0b" /> | <img width="412" height="917" alt="Borrowing History Screen 1" src="https://github.com/user-attachments/assets/98219b0a-4391-40d6-b792-5c6029cf9b8c" /> | 
 
