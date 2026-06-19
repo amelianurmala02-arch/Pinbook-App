@@ -1,4 +1,4 @@
-# 📚 Pinbook — Aplikasi Perpustakaan Digital Berbasis Android
+# Pinbook — Aplikasi Perpustakaan Digital Berbasis Android
 
 *Nama         : Amelia Nurmala Dewi*
 
@@ -17,8 +17,27 @@
 <img width="595" height="421" alt="A4 - 21" src="https://github.com/user-attachments/assets/5e018e53-8b1c-41c6-91e5-894868c4118b" />
 
 ---
-
 Pinbook adalah aplikasi perpustakaan digital berbasis Android yang memudahkan pengguna dalam meminjam, mengembalikan, dan mengelola buku secara online. Dilengkapi dengan fitur AI Chatbot, Scan Barcode, Notifikasi Pengingat, dan Multi-Language sesuai lokasi pengguna.
+
+
+---
+
+## Latar Belakang
+
+Banyak mahasiswa yang kesulitan dalam meminjam dan mengelola buku perpustakaan secara manual. Proses pencatatan yang masih konvensional seringkali menyebabkan kehilangan data, keterlambatan pengembalian buku, dan sulitnya mencari buku yang sesuai kebutuhan. Selain itu, proses pengembalian manual juga rawan human error karena petugas harus mencatat satu per satu data buku yang dikembalikan.
+
+Oleh karena itu, dikembangkan Pinbook sebagai solusi digital yang memudahkan proses peminjaman dan pengembalian buku. Pinbook berfokus murni pada pengelolaan peminjaman buku (bukan aplikasi baca buku/e-reader), sehingga pengguna dapat melihat detail buku, meminjam, dan mengembalikan buku hanya dengan scan barcode tanpa perlu input data secara manual.
+
+---
+
+## Tujuan Pengembangan
+
+Mempermudah pencatatan peminjaman dan pengembalian buku perpustakaan secara digital
+Mengurangi risiko kehilangan data akibat pencatatan manual
+Membantu pengguna agar tidak terlambat mengembalikan buku melalui notifikasi pengingat otomatis
+Mempercepat proses pencarian buku melalui fitur kategori dan pencarian
+Memberikan kemudahan rekomendasi buku melalui AI Chatbot sesuai minat pengguna
+Mempercepat proses pengembalian buku tanpa input manual, cukup dengan scan barcode
 
 ---
 
@@ -67,6 +86,19 @@ Alur penggunaan aplikasi Pinbook:
              ↓
        [Riwayat Pinjaman]
 ```
+## Penjelasan Alur Aplikasi
+
+1. Splash Screen — Tampilan pembuka saat aplikasi pertama kali dibuka.
+2. Location Permission Screen — Pengguna diminta mengizinkan akses lokasi.
+   - Jika izin diberikan → aplikasi mendeteksi lokasi pengguna otomatis (Detecting Location → Map Screen) untuk menyesuaikan bahasa dan        bendera negara.
+   - Jika izin ditolak → pengguna diarahkan ke Welcome Screen dengan bahasa default Inggris.
+3. Welcome Screen — Menampilkan bendera dan bahasa sesuai lokasi yang terdeteksi (mendukung 8 bahasa).
+4. Login / Register — Pengguna masuk menggunakan akun terdaftar, atau mendaftar akun baru via Firebase Authentication.
+5. Home Screen — Halaman utama berisi daftar buku, filter kategori, dan akses ke fitur lain (Rak Buku, AI Chat Bookie, Profil).
+6. Detail Buku — Pengguna dapat melihat informasi lengkap buku sebelum memutuskan untuk meminjam.
+7. Pinjam Buku — Pengguna memilih tanggal pengembalian lewat kalender, lalu konfirmasi peminjaman.
+8. Pengembalian Buku — Pengguna membuka halaman pengembalian, lalu scan barcode buku.
+9. Riwayat Pinjaman — Semua data peminjaman (aktif maupun sudah dikembalikan) tercatat dan dapat dilihat kembali oleh pengguna.
 
 ---
 
@@ -118,11 +150,15 @@ Alur penggunaan aplikasi Pinbook:
 ### 1. Kategori Buku
 - Filter buku berdasarkan kategori: **All**, **Pendidikan**, **Novel**
 - Pencarian buku berdasarkan judul
+  
+Cara kerja: Pengguna cukup menekan salah satu chip kategori (All, Pendidikan, atau Novel) di Home Screen, dan daftar buku akan otomatis tersaring sesuai kategori yang dipilih tanpa perlu reload halaman. Dengan fitur ini, pengguna tidak perlu scroll panjang untuk mencari buku yang diinginkan.
 
 ### 2. Scan Barcode Pengembalian Buku
 - Menggunakan library ZXing untuk scan barcode
 - Status buku otomatis berubah dari "Dipinjam" → "Dikembalikan"
 - Buku otomatis pindah ke tab Riwayat
+
+Cara kerja: Pengguna membuka halaman Pengembalian Buku, lalu menekan tombol scan dan mengarahkan kamera ke barcode yang tertera pada buku fisik. Sistem akan otomatis mencocokkan kode buku dengan data peminjaman yang tersimpan, lalu mengubah status peminjaman tanpa perlu input manual sama sekali.
 
 ### 3. Notifikasi Pengingat Pengembalian
 - Notifikasi langsung saat berhasil meminjam buku
@@ -131,10 +167,14 @@ Alur penggunaan aplikasi Pinbook:
 - Notifikasi pengingat pada hari H pengembalian
 - Dijadwalkan setiap hari jam 8 pagi menggunakan WorkManager
 
+Cara kerja: Setiap kali pengguna berhasil meminjam buku, BookReminderScheduler akan menjadwalkan 3 notifikasi pengingat (H-2, H-1, dan hari-H) menggunakan WorkManager. Notifikasi akan otomatis muncul setiap pukul 8 pagi sesuai jadwal yang ditentukan, sehingga pengguna tidak akan lupa mengembalikan buku tepat waktu.
+
 ### 4. AI Chatbot Bookie
 - Chatbot berbasis Gemini API
 - Memberikan rekomendasi buku sesuai minat pengguna
 - Mengenali koleksi buku yang tersedia di Pinbook
+
+Cara kerja: Pengguna cukup mengetikkan genre atau preferensi buku yang diinginkan pada kolom chat (misalnya "aku suka cerita romantis" atau "rekomendasi buku pemrograman"). Bookie akan memproses permintaan menggunakan Gemini API dan merekomendasikan buku yang benar-benar tersedia di koleksi Pinbook, dijawab secara ramah dalam Bahasa Indonesia.
 
 ---
 
