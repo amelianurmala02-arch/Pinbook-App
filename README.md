@@ -113,36 +113,39 @@ Alur penggunaan aplikasi Pinbook:
 ## 📱 UI Aplikasi (Screenshot Asli)
 
 ### 1. Splash Screen & Location Permission
-| Splash Screen | Location Permission | Detecting Location |
-|:---:|:---:|:---:|
-|<img width="412" height="917" alt="Splash Screen 2" src="https://github.com/user-attachments/assets/3d887bdf-5396-4e50-9a30-9bb8750c8465" />| <img width="412" height="917" alt="Android Compact - 1" src="https://github.com/user-attachments/assets/6f649983-65b6-4bf2-8d50-9a5715fa4a6a" /> | <img width="413" height="917" alt="Detecting Location Screen" src="https://github.com/user-attachments/assets/8d640718-ab69-4baa-b7f3-cf3dc4e1bb87" /> |
-
-### 2. Welcome Screen & Login
-| Welcome Indonesia | Login | 
+| Splash Screen | Location Permission |
 |:---:|:---:|
-|<img width="412" height="917" alt="Welcome Screen" src="https://github.com/user-attachments/assets/710d1b8c-f7f2-4525-9e54-179a4352ab33" /> | <img width="412" height="917" alt="Login Screen" src="https://github.com/user-attachments/assets/1d9c41ff-a5da-4f2d-b82d-76e1aa5d6c2f" /> |
+|<img width="412" height="917" alt="Splash Screen 2" src="https://github.com/user-attachments/assets/3d887bdf-5396-4e50-9a30-9bb8750c8465" />| <img width="412" height="917" alt="Android Compact - 1" src="https://github.com/user-attachments/assets/6f649983-65b6-4bf2-8d50-9a5715fa4a6a" /> |
 
-### 3. Register & Home
-| Register | Home | Bookie AI|
-|:---:|:---:|:---:|
-| <img width="412" height="917" alt="Register Screen" src="https://github.com/user-attachments/assets/091b3630-ca40-4f5d-893d-bbda013e4580" /> | <img width="412" height="917" alt="Group 113 (1)" src="https://github.com/user-attachments/assets/24fe8d9b-cbbd-4ceb-9a00-022c0539295e" /> | <img width="412" height="927" alt="Group 114" src="https://github.com/user-attachments/assets/55ae0445-e1d9-40aa-93cb-6e5fff13c220" /> |
+### 2. Detecting Location &  Welcome Screen 
+| Detecting Location | Welcome Indonesia | 
+|:---:|:---:|
+|<img width="413" height="917" alt="Detecting Location Screen" src="https://github.com/user-attachments/assets/8d640718-ab69-4baa-b7f3-cf3dc4e1bb87" /> | <img width="412" height="917" alt="Login Screen" src="https://github.com/user-attachments/assets/1d9c41ff-a5da-4f2d-b82d-76e1aa5d6c2f" /> |
+
+### 3. Login & Register \
+| Login | Register| 
+|:---:|:---:|
+| <img width="412" height="917" alt="Register Screen" src="https://github.com/user-attachments/assets/091b3630-ca40-4f5d-893d-bbda013e4580" /> | <img width="412" height="917" alt="Group 113 (1)" src="https://github.com/user-attachments/assets/24fe8d9b-cbbd-4ceb-9a00-022c0539295e" /> | 
 
 ### 4. Detail Buku  & Peminjaman
-| Detail Buku | Pinjam Buku | Sukses Pinjam |
+| Home | Bookie AI | 
 |:---:|:---:|:---:|
-| <img width="412" height="917" alt="Book Detail 2" src="https://github.com/user-attachments/assets/002d903e-bf9d-4dd2-939e-33ebfb59fa85" /> | <img width="412" height="917" alt="Calendar Picker 2" src="https://github.com/user-attachments/assets/f77b6f3b-d842-44e8-a291-033ca87f23db" /> | <img width="412" height="917" alt="Return Confirmation Screen" src="https://github.com/user-attachments/assets/b60e131f-f7d4-47f3-aed8-af5f9d771c85" /> | 
+| <img width="412" height="917" alt="Book Detail 2" src="https://github.com/user-attachments/assets/002d903e-bf9d-4dd2-939e-33ebfb59fa85" /> | <img width="412" height="917" alt="Calendar Picker 2" src="https://github.com/user-attachments/assets/f77b6f3b-d842-44e8-a291-033ca87f23db" /> | 
 
-### 5. Pengembalian & Riwayat
-| Pengembalian | Scan Barcode | Sedang Dipinjam |
+### 5. Detail Buku & Peminjaman
+| Detail Buku | Peminajaman| 
+|:---:|:---:|
+|<img width="412" height="917" alt="Return Book Screen" src="https://github.com/user-attachments/assets/611e9dec-924f-483e-9d65-4796b51d5ee0" /> | <img width="412" height="917" alt="Return Confirmation Screen (1)" src="https://github.com/user-attachments/assets/4b846ac3-0e36-43b4-a371-f1f084e59b0b" /> | 
+
+### 6. Pengembalian & Riwayat
+| Pengembalian | Riwayat | 
 |:---:|:---:|:---:|
-|<img width="412" height="917" alt="Return Book Screen" src="https://github.com/user-attachments/assets/611e9dec-924f-483e-9d65-4796b51d5ee0" /> | <img width="412" height="917" alt="Return Confirmation Screen (1)" src="https://github.com/user-attachments/assets/4b846ac3-0e36-43b4-a371-f1f084e59b0b" /> | <img width="412" height="917" alt="Borrowing History Screen 1" src="https://github.com/user-attachments/assets/98219b0a-4391-40d6-b792-5c6029cf9b8c" /> | 
+| <img width="412" height="917" alt="Book Rack Screen" src="https://github.com/user-attachments/assets/8bb5a764-11c6-4e95-9a45-8ebcc995a5ef" /> | <img width="412" height="917" alt="Borrowing History Screen 2" src="https://github.com/user-attachments/assets/6178433e-d34a-4593-9e63-5ae503cf42a3" /> | 
 
 ### 6. Rak Buku, AI & Profil
-| Rak Buku | Riwayat |  Profil |
+| Pengembalian | Riwayat |
 |:---:|:---:|:---:|
 | <img width="412" height="917" alt="Book Rack Screen" src="https://github.com/user-attachments/assets/8bb5a764-11c6-4e95-9a45-8ebcc995a5ef" /> | <img width="412" height="917" alt="Borrowing History Screen 2" src="https://github.com/user-attachments/assets/6178433e-d34a-4593-9e63-5ae503cf42a3" /> | <img width="412" height="917" alt="Profile Screen" src="https://github.com/user-attachments/assets/0ae78fd9-78df-4f19-a525-4e0590a7b35c" /> |
-
-
 ---
 
 ## Fitur yang ditambahkan
