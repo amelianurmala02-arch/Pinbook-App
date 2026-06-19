@@ -122,7 +122,7 @@ Alur penggunaan aplikasi Pinbook:
 |:---:|:---:|
 |<img width="413" height="917" alt="Detecting Location Screen" src="https://github.com/user-attachments/assets/8d640718-ab69-4baa-b7f3-cf3dc4e1bb87" /> | <img width="412" height="917" alt="Welcome Screen (1)" src="https://github.com/user-attachments/assets/27e5012a-21be-4a26-8320-5626c9ce4be4" /> |
 
-### 3. Login & Register \
+### 3. Login & Register 
 | Login | Register| 
 |:---:|:---:|
 | <img width="412" height="917" alt="Register Screen" src="https://github.com/user-attachments/assets/091b3630-ca40-4f5d-893d-bbda013e4580" /> | <img width="412" height="917" alt="Register Screen (1)" src="https://github.com/user-attachments/assets/6d10e7d0-ccec-4c1f-8c73-fb3344d14554" /> | 
