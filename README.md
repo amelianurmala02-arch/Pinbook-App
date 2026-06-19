@@ -260,7 +260,8 @@ Pinbook/
 | Platform | Link |
 |----------|------|
 | **Repository GitHub** | [github.com/amelianurmala02-arch/Pinbook](https://github.com/amelianurmala02-arch/Pinbook) |
-| **Video Demo** | https://youtu.be/7bhAccqndLA?si=6OTrp3IFaHA6w1ds |
+| **Video UX** | https://youtu.be/7bhAccqndLA?si=6OTrp3IFaHA6w1ds |
+| **Video App** | https://youtube.com/shorts/Wuz8url4_UA?si=jdRiZdLGeozrdF6N |
 | **ClickUp SCRUM** | https://sharing.clickup.com/90181767922/g/h/2kzm14qj-678/2b3374f74beb58e |
 
 ---
