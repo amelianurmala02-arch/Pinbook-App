@@ -139,7 +139,7 @@ Alur penggunaan aplikasi Pinbook:
 
 ### 6. Rak Buku & Pengembalian Buku
 | Rak Buku | Pengembalian Buku | 
-|:---:|:---:|:---:|
+|:---:|:---:|
 | <img width="412" height="917" alt="Book Rack Screen (1)" src="https://github.com/user-attachments/assets/b9c1c73b-1156-4937-85e7-905a2f2c3032" /> | <img width="412" height="917" alt="Return Book Screen (1)" src="https://github.com/user-attachments/assets/3d1f2081-28d7-4872-8957-dd1dc1dee361" /> | 
 
 ### 7. Scan Barcode & Pengembalian Berhasil
