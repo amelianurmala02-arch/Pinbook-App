@@ -49,9 +49,11 @@ Mempercepat proses pengembalian buku tanpa input manual, cukup dengan scan barco
 
 ## Storyboard
 
-<img width="1920" height="1080" alt="Desktop - 1" src="https://github.com/user-attachments/assets/d50b573c-cecd-432a-9be1-3d8173cda99c" />
+<img width="1920" height="1080" alt="Desktop - 1 (2)" src="https://github.com/user-attachments/assets/5db704eb-37eb-40e1-a946-374c20391289" />
 
-<img width="1920" height="1080" alt="Desktop - 2" src="https://github.com/user-attachments/assets/871d0932-fb27-4a8d-8e43-f5622a2bc827" />
+<img width="1920" height="1080" alt="Desktop - 2 (2)" src="https://github.com/user-attachments/assets/4f2af2cb-6da0-4258-88bc-4978f2d68e6a" />
+
+<img width="1920" height="1080" alt="Desktop - 13 (1)" src="https://github.com/user-attachments/assets/0947fd26-4971-4442-8c12-7222607f5809" />
 
 Alur penggunaan aplikasi Pinbook:
 
